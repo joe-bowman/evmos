@@ -59,7 +59,7 @@ func (k Keeper) GetClaimableAmountForAction(
 	return claimableCoins
 }
 
-// GetUserTotalClaimable returns claimable amount for a specific action done by an address
+// GetUserTotalClaimable returns the cumulated claimable amount for all actions done by an address
 func (k Keeper) GetUserTotalClaimable(ctx sdk.Context, addr sdk.AccAddress) sdk.Int {
 	totalClaimable := sdk.ZeroInt()
 
